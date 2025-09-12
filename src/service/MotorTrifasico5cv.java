@@ -1,9 +1,8 @@
 package service;
 
-import model.EstoqueMotor;
 import model.Status;
-
-import java.util.Random;
+import model.estoque.EstoqueMotor;
+import service.codigo.CodigoProvider;
 
 public class MotorTrifasico5cv implements Runnable{
 
