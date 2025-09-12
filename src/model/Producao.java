@@ -1,5 +1,6 @@
 package model;
 
+import model.estoque.EstoqueMotor;
 import service.CodigoProvider;
 
 
