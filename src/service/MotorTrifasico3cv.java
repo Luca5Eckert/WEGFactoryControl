@@ -12,9 +12,10 @@ public class MotorTrifasico3cv implements Runnable {
     private final CodigoProvider codigoProvider;
     private final int quantidade;
 
-    public MotorTrifasico3cv(EstoqueMotor estoqueMotor, CodigoProvider codigoProvider) {
+    public MotorTrifasico3cv(EstoqueMotor estoqueMotor, CodigoProvider codigoProvider, int quantidade) {
         this.estoqueMotor = estoqueMotor;
         this.codigoProvider = codigoProvider;
+        this.quantidade = quantidade;
     }
 
     public void iniciarProducao(){
