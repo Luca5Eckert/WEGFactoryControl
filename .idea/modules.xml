@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/WEGFactoryControl.iml" filepath="$PROJECT_DIR$/.idea/WEGFactoryControl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WEGFactoryControl.iml" filepath="$PROJECT_DIR$/.idea/WEGFactoryControl.iml" />
     </modules>
   </component>
 </project>

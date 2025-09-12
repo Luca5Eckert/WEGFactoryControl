@@ -9,7 +9,8 @@ public enum Status {
 
     //Retorna status aleatorio.
     public static Status pegaAleatorio() {
-        return PRODUZIDO;
+        Random random = new Random();
+        return Status.values()[random.nextInt(0,3)];
     }
 
 }
