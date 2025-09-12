@@ -1,7 +1,7 @@
 package model;
 
 import model.estoque.EstoqueMotor;
-import service.CodigoProvider;
+import service.codigo.CodigoProvider;
 
 
 //Exemplo para iniciar interfaces
@@ -17,6 +17,8 @@ public class Producao {
 
     public void rodarProducao(int quantidade){
 
+
+        String codigo = codigoProvider.gerarCodigo("MT3");
     }
 
 }
