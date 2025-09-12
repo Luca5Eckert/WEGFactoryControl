@@ -1,6 +1,7 @@
 package model;
 
-import service.CodigoProvider;
+import model.estoque.EstoqueMotor;
+import service.codigo.CodigoProvider;
 
 
 //Exemplo para iniciar interfaces

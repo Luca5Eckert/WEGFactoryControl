@@ -1,4 +1,6 @@
-package model;
+package model.estoque;
+
+import model.Status;
 
 public interface EstoqueMotor {
 
