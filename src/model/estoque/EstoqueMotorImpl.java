@@ -12,7 +12,7 @@ public class EstoqueMotorImpl implements EstoqueMotor {
     private final static ConcurrentMap<String, Status> estoque = new ConcurrentHashMap<>();
 
     @Override
-    public void adicionar(String codigo, Status status) {
+    public synchronized void adicionar(String codigo, Status status) {
         estoque.put(codigo, status);
     }
 

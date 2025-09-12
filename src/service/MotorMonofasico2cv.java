@@ -3,8 +3,11 @@ package service;
 import model.estoque.EstoqueMotor;
 import model.Status;
 import service.codigo.CodigoProvider;
+import view.PrintUtil;
 
-public abstract class MotorMonofasico2cv implements  Runnable{
+import java.time.LocalDateTime;
+
+public class MotorMonofasico2cv implements  Runnable{
 
     private EstoqueMotor estoqueMotor;
     private CodigoProvider codigoProvider;
@@ -22,11 +25,14 @@ public abstract class MotorMonofasico2cv implements  Runnable{
     }
 
     public void iniciarProducao (){
-        for(int i = 0; i <= quantidade; i ++){
+        PrintUtil.imprimaTexto("Inicia a linha de produção do motor Monofasico 2cv ");
+
+        for(int i = 0; i < quantidade; i ++){
             String cod = codigoProvider.gerarCodigo("MM2");
            Status status = Status.pegaAleatorio();
             estoqueMotor.adicionar(cod, status);
         }
+        PrintUtil.imprimaTexto("Encerra a linha de produção do motor Monofasico 2cv ");
     }
 
 
